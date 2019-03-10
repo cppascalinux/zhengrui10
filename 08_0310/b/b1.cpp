@@ -17,6 +17,7 @@ struct pt
 };
 int n;
 pt p[309];
+ll tmp1,tmp2;
 ll cross(pt &o,pt &a,pt &b)
 {
 	return (a-o)^(b-o);
@@ -48,6 +49,8 @@ int solve1(int a,int b,int c)
 			if(cross(t,x,y)>0&&cross(t,y,z)>0&&cross(t,z,x)>0)
 				sm++;
 		}
+	tmp1+=sm*(sm-1)/2;
+	tmp2+=sm*(n-sm-3);
 	return sm*(sm-1)/2+(n-sm-3)*(n-sm-4)/2;
 }
 int solve2(int o,int a,int b)
@@ -84,6 +87,7 @@ int main()
 			for(int k=j+1;k<=n;k++)
 				if(i!=j&&i!=k)
 					ans-=solve2(i,j,k);
+	// printf("tmp1:%lld tmp2:%lld\n",tmp1,tmp2);
 	printf("%lld",ans);
 	return 0;
 }
