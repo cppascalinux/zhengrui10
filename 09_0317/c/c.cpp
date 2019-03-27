@@ -16,12 +16,12 @@ void solve()
 	for(int i=0;i<=n;i+=2)
 		for(int j=0;j<=m;j+=2)
 			ans=(ans+cb[i][j])%k;
-	for(int i=0;i<=n;i++)
-	{
-		for(int j=0;j<=i;j++)
-			printf("%d ",cb[i][j]);
-		printf("\n");
-	}
+	// for(int i=0;i<=n;i++)
+	// {
+	// 	for(int j=0;j<=i;j++)
+	// 		printf("%d ",cb[i][j]);
+	// 	printf("\n");
+	// }
 	printf("%d",ans);
 }
 int main()
