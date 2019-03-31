@@ -24,7 +24,7 @@ int main()
 {
 #ifndef ONLINE_JUDGE
 	freopen("c.in","r",stdin);
-	freopen("c.out","w",stdout);
+	freopen("bf.out","w",stdout);
 #endif
 	scanf("%d%d",&n,&k);
 	for(int i=1,a,b,c;i<=n-1;i++)
