@@ -1,3 +1,5 @@
+//2019.04.18
+//zroj645 美术作业 polya定理+树哈希+基环内向树
 #include<iostream>
 #include<cstdio>
 #include<cstring>
